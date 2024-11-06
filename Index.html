@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Steps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Elegant Steps</h1>
+            <p>Your Destination for Exquisite Footwear</p>
+        </div>
+    </header>
+
+    <section class="history-section">
+        <div class="history-container">
+            <img src="https://img.freepik.com/premium-photo/luxury-pink-high-heel-shoes-isolated-white-background_1346048-77777.jpg" alt="Luxury Pink High Heel Shoes">
+            <div class="history-quote">"High heels were invented by a woman who had been kissed on the forehead."</div>
+        </div>
+        <div class="history-text">
+            <h2>The Evolution of High Heels</h2>
+            <p class="elegant-text">High heels have transcended time and trends, from royal courts of the 17th century to modern-day fashion icons. They embody elegance, confidence, and timeless style, gracing wardrobes around the world.</p>
+        </div>
+    </section>
+
+    <section class="product-carousel">
+        <h2>Shop Our Collection</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbSW2E0Hjx7vz9XBa5mzj9SA6hFkUKCHyJ7w&s" alt="Shoe 1">
+                <p>Elegant Heel - €49.99</p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPT1zlgr7kEA_bhpLnEcoj3BHCBW6OK8R0g&s" alt="Shoe 2">
+                <p>Chic Sandals - €59.99</p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://sc01.alicdn.com/kf/H2a52aca6b1c54b67b864531df4c170b30.jpg" alt="Shoe 3">
+                <p>Classic Pumps - €39.99</p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://t3.ftcdn.net/jpg/08/23/46/22/360_F_823462263_LU8J4P0UEg5z8PD4NcHroHblpCZYX047.jpg" alt="Shoe 4">
+                <p>Luxury Heels - €69.99</p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.etsystatic.com/37613992/r/il/26c66d/4568874447/il_fullxfull.4568874447_8you.jpg" alt="Shoe 5">
+                <p>Stylish Stilettos - €55.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <img src="https://www.stylecraze.com/wp-content/uploads/2018/01/Different-Types-Of-Heels-A-Beginners-Guide.png" alt="Different Types of Heels">
+        <div class="about-text">
+            <h2>About Elegant Steps</h2>
+            <p>Founded in 2024, Elegant Steps brings you the finest selection of footwear designed for comfort, style, and elegance. Our passion is to elevate your style with unique designs and luxurious quality.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact Us:</p>
+        <ul>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Location</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const historySection = document.querySelector('.history-section');
+            const sectionPosition = historySection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.5;
+
+            if (sectionPosition < screenPosition) {
+                historySection.classList.add('animate');
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
